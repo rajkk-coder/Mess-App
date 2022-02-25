@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".StudentDashboard">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:gravity="center_vertical"
+                android:text="@string/dashboard"
+                android:textColor="#FF5722"
+                android:textSize="32sp"></TextView>
+
+            <TextView
+                android:id="@+id/nam"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostel"
+                android:textSize="24sp"
+                android:layout_marginTop="65dp"
+                android:layout_marginStart="200dp">
+
+            </TextView>
+            <TextView
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:id="@+id/roll">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="icon"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp">
+
+        </TextView>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2">
+
+            <android.widget.ImageView
+                android:layout_width="174dp"
+                android:layout_height="135dp"
+                android:src="@mipmap/ic_launcher">
+
+            </android.widget.ImageView>
+
+            <android.widget.ImageView
+                android:layout_width="162dp"
+                android:layout_height="90dp"
+                android:src="@mipmap/ic_launcher">
+
+            </android.widget.ImageView>
+
+            <android.widget.ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher">
+
+            </android.widget.ImageView>
+
+            <android.widget.ImageView
+                android:layout_width="170dp"
+                android:layout_height="122dp"
+                android:src="@mipmap/ic_launcher">
+
+            </android.widget.ImageView>
+        </GridLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
